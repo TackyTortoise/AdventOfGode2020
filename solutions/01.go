@@ -14,7 +14,7 @@ func findInSlice[T comparable](s []T, find T, startIndex int) bool {
 	return false
 }
 
-func Day_01_part1() {
+func Day1Part1() {
 	lines := helpers.ReadFileLines("./input/01.txt")
 	nums := helpers.StringSliceToIntSlice(lines)
 
@@ -33,7 +33,7 @@ type intPair struct {
 	second int
 }
 
-func Day_01_part2() {
+func Day1Part2() {
 	lines := helpers.ReadFileLines("./input/01.txt")
 	nums := helpers.StringSliceToIntSlice(lines)
 
