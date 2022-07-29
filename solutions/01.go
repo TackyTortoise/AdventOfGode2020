@@ -1,7 +1,7 @@
 package main
 
 import (
-	helpers "aoghelpers"
+	helpers "AoG/helpers"
 	"fmt"
 )
 
@@ -46,7 +46,7 @@ func Day_01_part2() {
 			if sum > 2020 {
 				continue
 			}
-			fmt.Printf("%d + %d = %d\n", pair.first, pair.second, sum)
+			//fmt.Printf("%d + %d = %d\n", pair.first, pair.second, sum)
 			sumMap[sum] = pair
 		}
 	}
@@ -57,6 +57,7 @@ func Day_01_part2() {
 		if ok {
 			mult := num * value.first * value.second
 			fmt.Println(mult)
+			return
 		}
 	}
 }
