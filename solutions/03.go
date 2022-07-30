@@ -7,11 +7,11 @@ import (
 
 func plotCourse(field []string, h, v int) int {
 	width := len(field[0])
-	maxV := len(field)
+	height := len(field)
 
 	cX := h
 	count := 0
-	for y := v; y < maxV; y += v {
+	for y := v; y < height; y += v {
 		currChar := field[y][cX%width]
 		cX += h
 		if currChar == '#' {
