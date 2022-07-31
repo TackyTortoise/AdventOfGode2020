@@ -169,7 +169,7 @@ func Day4Part1() {
 			count++
 		}
 	}
-	fmt.Printf("%d valid passports found.", count)
+	fmt.Printf("%d valid passports found.\n", count)
 }
 
 func Day4Part2() {
@@ -182,5 +182,5 @@ func Day4Part2() {
 			count++
 		}
 	}
-	fmt.Printf("valid passports found: %d / %d", count, len(passPorts))
+	fmt.Printf("valid passports found: %d / %d\n", count, len(passPorts))
 }
