@@ -51,6 +51,8 @@ func getPossiblities(input []int) int {
 	for i, n := range input {
 		if n-num <= 3 {
 			p += getPossiblities(input[i:])
+		} else {
+			break
 		}
 	}
 	storage[num] = p

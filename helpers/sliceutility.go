@@ -16,3 +16,16 @@ func StringSliceToIntSlice(input []string) []int {
 	}
 	return nums
 }
+
+func IsValueInSlice[T comparable](s []T, f T) bool {
+	for _, v := range s {
+		if v == f {
+			return true
+		}
+	}
+	return false
+}
+
+func IsValidIndex[T string | []any](s T, i int) bool {
+	return i >= 0 && i < len(s)
+}
